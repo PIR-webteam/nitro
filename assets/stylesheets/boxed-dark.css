@@ -1,0 +1,7 @@
+#section-header .container,
+#section-content .container{
+	border-left: 10px solid black !important; 
+	border-right: 10px solid black !important;
+	background: black !important;
+	border-top: 10px solid black;
+}

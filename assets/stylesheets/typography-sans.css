@@ -1,0 +1,237 @@
+
+body {
+    color: #777777;
+    font: 300 15px/140% "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+a, a:hover {
+    color: #EE7727;
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, .feature {
+    color: #222222;
+    font-weight: bold;
+    text-transform: none;
+}
+.header_blurb {
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+h1#logo{text-transform: uppercase;}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+h1.title {
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 26px;
+    line-height: 140%;
+    margin-bottom: 20px;
+    padding: 0 0 15px;
+    text-align: left;
+}
+h2.fulltitle, h1.fulltitle, .full-width h1 {
+    text-align: center;
+}
+
+.fp_caption h1 {
+line-height: 140%;
+font-weight: 400;
+margin: 15px 0 40px;
+}
+
+.content h3 {
+    font-size: 24px;
+    line-height: 120%;
+    margin: 30px 0 15px;
+}
+.sidebar h3, .aside h3 {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 10px 0;
+}
+h3#comments {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+#comments-title {
+    font-size: 25px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 3px;
+}
+h5 {
+    font-size: 14px;
+    line-height: 130%;
+    margin-top: 10px;
+}
+.content h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.tabs li a {
+    color: #111111;
+}
+.aside-container {
+    margin-right: 20px;
+}
+.aside {
+    background: none repeat scroll 0 0 transparent;
+    border-right: 3px solid rgba(155, 155, 155, 0.2);
+    display: block;
+    font-size: 13px;
+    padding: 10px 15px 10px 10px;
+}
+.blurb-maker h4, .hybrid h4, .module-container h4 {
+    font-size: 17px;
+}
+.superquote {
+    clear: both;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 34px;
+    margin: 40px 0;
+    padding-left: 20px;
+}
+.supertagline, .fp_caption {
+    clear: both;
+    color: #444444;
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 130%;
+    margin-top: 12px;
+    text-align: center;
+}
+.supertagline {
+    font-size: 18px;
+    color: white;
+}
+.feature {
+    display: block;
+    font-size: 18px;
+    line-height: 120%;
+    padding: 24px 20px 0;
+}
+.feature span {
+    background: none repeat scroll 0 0 white;
+    padding: 10px;
+}
+.feature .button {
+    float: right;
+}
+.commentlist .comment-body .commentmetadata {
+    font-size: 10px;
+    font-style: italic;
+}
+.vcard a {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 300;
+}
+.tags a, #section-tophat, #section-footer span, #section-sub-footer, .date {
+    font-size: 12px;
+}
+#section-footer {
+    font-size: 14px;
+}
+.portfolio-filters span, .portfolio-view span {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 21px;
+}
+label, legend {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 6px;
+}
+#section-navigation{margin-bottom: -6px;}
+
+.sf-menu {
+    margin-top: 10% !important;
+}
+
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	top: 36px; 
+}
+
+#section-navigation{
+	height: 56px;
+}
+
+@-moz-document url-prefix() { 
+	.sf-menu li:hover ul,
+	.sf-menu li.sfHover ul {
+		top: 37px; 
+	}
+	#section-navigation{
+	height: 52px;
+	}
+}
+
+
+.sf-menu > li > a strong {
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+}
+.sf-menu > li a span {
+    color: #777;
+    display: block;
+    font-size: 12.5px;
+    font-weight: normal;
+    line-height: 14px;
+}
+.sf-menu > li:hover a strong {
+    color: #222222;
+}
+.sf-menu > li:hover a span {
+    color: #444444;
+}
+.sf-menu ul {
+    color: #CCCCCC;
+    font-size: 14px;
+}
+.sf-menu ul li:hover a {
+    color: white;
+}
+.sf-menu.light ul li a {
+    color: #555555;
+}
+.sf-menu.light ul li:hover a {
+    color: #000000;
+}
+.sf-menu.light ul {
+    color: #333333;
+}
+#section-tophat, #section-tophat a, #section-footer, #section-footer a, #section-sub-footer {
+    color: #AAAAAA !important;
+}
+#section-footer h5 {
+    color: #EEEEEE !important;
+    font-weight: 300;
+}
+#section-footer a {
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, th, tr, .portfolio-filters span, .portfolio-view span {
+    text-shadow: 1px 0 1px #FFFFFF;
+}
+#section-tophat, #section-footer, #section-footer h5 {
+    text-shadow: 1px 0 1px #000000;
+}
+h5.no_image {
+    margin-top: 0;
+    padding-top: 0;
+}
