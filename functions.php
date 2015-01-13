@@ -286,7 +286,6 @@ function init_mdnw() {
     /* Register Navigation */
     register_nav_menus( array(
 		'topbar' => __( 'Top Bar Menu', 'skeleton' ),
-		'topbar_small' => __( 'Top Bar Menu - Responsive Mode', 'skeleton' ),
 	) );
 
 
