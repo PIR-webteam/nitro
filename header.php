@@ -102,78 +102,45 @@
 
 <!-- Super Container for Slider -->
 <div class="super-container full-width" id="section-slider">
+	<!-- Frontpage Slider Conditionals -->
+	<?php if ( is_front_page() ) : ?> 		
+		
+			<!-- New Hero Super Container for Header-->
+		<div class="container">
+			<div class="hero">
+				<div class="hero_text ten columns alpha">
+					<div class="hero_title">
 
-		
-		<!-- Frontpage Slider Conditionals -->
-		<?php if ( is_front_page() ) : ?> 		
-		
-			<!-- New RevolutionSlider Super Container for Header-->
-			<?php if(ot_get_option('frontpage_revolution_slider')) {
-				
-				$strip_this_shit = array("[", "]", " ", "rev_slider");
-				$revslider_shortcode_prestrip = ot_get_option('frontpage_revolution_slider');
-				$revslider_shortcode_poststrip = str_replace($strip_this_shit, "", "$revslider_shortcode_prestrip");
+					<?php if (get_option_tree('hero_header_title')) : ?>
+						<?php echo get_option_tree('hero_header_title'); ?>
+					<?php endif; ?>
 
-				putRevSlider( "$revslider_shortcode_poststrip" );
-				
-				?>
-									
-			<?php } ?>	
-			<!--RevolutionSlider end-->
+					</div>
+					<div class="hero_subtitle">
+						<?php if (get_option_tree('hero_header_subtitle')) : ?>
+							<?php echo get_option_tree('hero_header_subtitle'); ?>
+						<?php endif; ?>						
+					</div>
+				</div>
+				<div class="hero_button six columns omega">
+					<a href="
+						<?php if (get_option_tree('hero_header_button_link')) : ?>
+							<?php echo get_option_tree('hero_header_button_link'); ?>
+						<?php endif; ?>
+						">
+					<button>
+						<span>
+							<?php if (get_option_tree('hero_header_button_text')) : ?>
+								<?php echo get_option_tree('hero_header_button_text'); ?>
+							<?php endif; ?>			
+						</span>
+					</button>
+					</a>
+				</div>
+			</div>
+		</div>
 			
-		<?php endif; ?>
-		
-		
-		<!-- Page Slider Conditionals -->
-		<?php if ( is_page() ) : ?>
-			
-			<!-- New RevolutionSlider Super Container for Header-->
-				<?php 
-				if(get_custom_field('frontpage_slider') == "Yes") {						
-					if(ot_get_option('frontpage_revolution_slider')) {
-					
-					$strip_this_shit = array("[", "]", " ", "rev_slider");
-					$revslider_shortcode_prestrip = ot_get_option('frontpage_revolution_slider');
-					$revslider_shortcode_poststrip = str_replace($strip_this_shit, "", "$revslider_shortcode_prestrip");
-	
-					putRevSlider( "$revslider_shortcode_poststrip" );
-					}					
-				 } ?>	
-				<!--RevolutionSlider end-->
-
-				<!-- PageSlider Conditional -->			
-				<!-- New RevolutionSlider Super Container for Header-->
-				<?php if(get_custom_field('page_revolution_slider')) {
-					
-					$strip_this_shit_1 = array("[", "]", " ", "rev_slider");
-					$revslider_shortcode_prestrip_1 = get_custom_field('page_revolution_slider');
-					$revslider_shortcode_poststrip_1 = str_replace($strip_this_shit_1, "", "$revslider_shortcode_prestrip_1");
-	
-					putRevSlider( "$revslider_shortcode_poststrip_1" );
-				 } ?>	
-				 
-				<!--RevolutionSlider end-->
-			
-		<?php endif; ?>
-		
-		
-		<!-- Single Post Slider Conditionals -->
-		<?php if ( is_single() ) : ?>		
-
-				<!-- PostSlider Conditional -->			
-				<!-- New RevolutionSlider Super Container for Header-->
-				<?php if(get_custom_field('page_revolution_slider')) {
-					
-					$strip_this_shit_1 = array("[", "]", " ", "rev_slider");
-					$revslider_shortcode_prestrip_1 = get_custom_field('page_revolution_slider');
-					$revslider_shortcode_poststrip_1 = str_replace($strip_this_shit_1, "", "$revslider_shortcode_prestrip_1");
-	
-					putRevSlider( "$revslider_shortcode_poststrip_1" );
-				 } ?>	
-				<!--RevolutionSlider end-->
-			
-		<?php endif; ?>
-	
+	<?php endif; ?>
 		
 		
 		<!-- Page Caption Conditionals -->
@@ -202,8 +169,6 @@
 			$GLOBALS[ 'ourpostid' ] = $wp_query->post->ID; ?>
 		
 		<?php endif; ?>
-
-
 </div>
 
 
