@@ -185,7 +185,7 @@ jQuery(document).ready(function($) {
 			timeHide: 900
 		});	 */
 	
-  		
+/*  		
 		 $("ul.sf-menu").supersubs({
 		 	minWidth:    14,   // minimum width of sub-menus in em units 
             maxWidth:    29,   // maximum width of sub-menus in em units 
@@ -202,7 +202,7 @@ jQuery(document).ready(function($) {
   			window.location = $(this).find("option:selected").val();
 		 });
 		 
-
+*/
 
 
 

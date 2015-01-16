@@ -232,8 +232,8 @@ function init_mdnw() {
     	wp_register_script( 'Modernizer', WP_THEME_URL . '/assets/javascripts/modernizr.custom.69142.js', false, null, true);
     	wp_enqueue_script( 'Modernizer' );
     	
-    	wp_register_script( 'Superfish', WP_THEME_URL . '/assets/javascripts/superfish.js', false, null, true);
-    	wp_enqueue_script( 'Superfish' );
+//    	wp_register_script( 'Superfish', WP_THEME_URL . '/assets/javascripts/superfish.js', false, null, true);
+//    	wp_enqueue_script( 'Superfish' );
 	
 		wp_register_script( 'SuperSubs', WP_THEME_URL . '/assets/javascripts/supersubs.js', false, null, true);
     	wp_enqueue_script( 'SuperSubs' );
@@ -269,8 +269,8 @@ function init_mdnw() {
     	wp_register_style ( 'custom-buttons', WP_THEME_URL . '/assets/stylesheets/buttons.css' );
     	wp_enqueue_style( 'custom-buttons' );
     	
-    	wp_register_style ( 'superfish', WP_THEME_URL . '/assets/stylesheets/superfish.css' );
-    	wp_enqueue_style( 'superfish' );
+//    	wp_register_style ( 'superfish', WP_THEME_URL . '/assets/stylesheets/superfish.css' );
+//    	wp_enqueue_style( 'superfish' );
     	
     	wp_register_style ( 'prettyphoto', WP_THEME_URL . '/assets/javascripts/prettyPhoto/css/prettyPhoto.css' );
     	wp_enqueue_style( 'prettyphoto' );
